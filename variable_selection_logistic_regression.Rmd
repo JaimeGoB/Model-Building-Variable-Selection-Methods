@@ -1,0 +1,40 @@
+---
+title: "Variable Selection with Logistic Regression Model"
+author: "Jaime"
+date: "10/26/2020"
+output: html_document
+---
+
+```{r include=FALSE}
+library(caret)
+library(bestglm)
+library(MASS)
+```
+
+### Reading the White Wine Quality Dataset
+
+Pre-processing the dataset. 
+All wines that that have quality of 7 will be considered good and labeled as 1. Wines with quality less than 6 will not be considered good and labeled as 0.
+
+```{r}
+wine <- read.csv("winequality-white.csv", header = T, sep = ";")
+wine$quality <- ifelse(wine$quality >= 7, 1, 0)
+names(wine)[12] <- "good"
+wine[12] <- as.factor(wine$good)
+```
+
+### (a) Fit a logistic regression model using all predictors
+```{r}
+full_model = glm(good~., family=binomial,wine) 
+summary(full_model)
+```
+#### Compute its test error rate.
+Using 10-Fold Cross Validation, I will compute the test error rate.
+```{r}
+#using CV to compute test error for full logistic model
+full_model_cv = train(as.factor(good)~., data=wine, method="glm", family="binomial",metric="Accuracy",
+                      trControl=trainControl(method = "cv",number = 10))
+#getting the error using CV
+test_error_full_model_cv = 1 - full_model_cv$results$Accuracy
+```
+
