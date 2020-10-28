@@ -43,7 +43,10 @@ The predictors are the following.
 
 # Results
 
-Using 10-Fold-CV we will choose the best model.
+Using 10-Fold-Cross-Validation as a measure of Test Error.
+**I would recommend using the model provided by Ridge Regression because it provides lowest Test Error according to CV.**
+
+![Test Image 1](https://github.com/JaimeGoB/Model-Building-Variable-Selection-Methods/blob/main/data/results.png)
 
 
 
