@@ -16,8 +16,10 @@ To find the best model.
 
 
 ## Fit a logistic regression model using all predictors
+
 The predictors are the following.
-![Test Image 1](https://github.com/JaimeGoB/Model-Building-Variable-Selection-Methods/blob/main/data/full.png)
+
+<img src="https://github.com/JaimeGoB/Model-Building-Variable-Selection-Methods/blob/main/data/full.png" width="600" height="300" />
 
 ## Using Best-subset selection to find the best logistic regression model
 The predictors are the following.
