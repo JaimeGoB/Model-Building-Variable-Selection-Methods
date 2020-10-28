@@ -43,7 +43,7 @@ The predictors are the following.
 
 ## Using Ridge Regression to find the best logistic regression model
 
-Looking for the best model we have achieve less than 20% error rate.
+Looking for the best lambda in Ridge we have achieve less than 20% error rate.
 
 <img src="https://github.com/JaimeGoB/Model-Building-Variable-Selection-Methods/blob/main/data/ridge_plot.png" width="300" height="200" />
 
@@ -56,7 +56,7 @@ The predictors are the following.
 
 ## Using Lasso Regression to find the best logistic regression model
 
-Looking for the best model we have achieve less than 20% error rate.
+Looking for the best lambda for Lasso we have achieve less than 20% error rate.
 
 <img src="https://github.com/JaimeGoB/Model-Building-Variable-Selection-Methods/blob/main/data/lasso_plot.png" width="300" height="200" />
 
