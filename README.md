@@ -45,26 +45,26 @@ The predictors are the following.
 
 Looking for the best model we have achieve less than 20% error rate.
 
-<img src="https://github.com/JaimeGoB/Model-Building-Variable-Selection-Methods/blob/main/data/ridge_plot.png" width="600" height="300" />
+<img src="https://github.com/JaimeGoB/Model-Building-Variable-Selection-Methods/blob/main/data/ridge_plot.png" width="400" height="200" />
 
 
 
 The predictors are the following.
 
-<img src="https://github.com/JaimeGoB/Model-Building-Variable-Selection-Methods/blob/main/data/ridge.png" width="600" height="300" />
+<img src="https://github.com/JaimeGoB/Model-Building-Variable-Selection-Methods/blob/main/data/ridge.png" width="300" height="600" />
 
 
 ## Using Lasso Regression to find the best logistic regression model
 
 Looking for the best model we have achieve less than 20% error rate.
 
-<img src="https://github.com/JaimeGoB/Model-Building-Variable-Selection-Methods/blob/main/data/lasso_plot.png" width="600" height="300" />
+<img src="https://github.com/JaimeGoB/Model-Building-Variable-Selection-Methods/blob/main/data/lasso_plot.png" width="400" height="200" />
 
 
 
 The predictors are the following.
 
-<img src="https://github.com/JaimeGoB/Model-Building-Variable-Selection-Methods/blob/main/data/lasso.png" width="600" height="300" />
+<img src="https://github.com/JaimeGoB/Model-Building-Variable-Selection-Methods/blob/main/data/lasso.png" width="300" height="600" />
 
 # Results
 
