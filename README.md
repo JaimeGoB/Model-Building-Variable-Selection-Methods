@@ -39,6 +39,7 @@ Looking for the best model we have achieve less than 20% error rate.
 
 
 The predictors are the following.
+
 ![Test Image 1](https://github.com/JaimeGoB/Model-Building-Variable-Selection-Methods/blob/main/data/ridge.png)
 
 
@@ -49,6 +50,7 @@ Looking for the best model we have achieve less than 20% error rate.
 
 
 The predictors are the following.
+
 ![Test Image 1](https://github.com/JaimeGoB/Model-Building-Variable-Selection-Methods/blob/main/data/lasso.png)
 
 # Results
