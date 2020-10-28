@@ -17,6 +17,7 @@ full_model <- glm( as.factor(good) ~., family=binomial,wine)
 
 ###### compute its test error rate. #######
 #using CV to compute test error for full logistic model
+set.seed(1234)
 full_model_cv = train( as.factor(good) ~., data=wine, method="glm", family="binomial",metric="Accuracy",
                       trControl=trainControl(method = "cv",number = 10))
 
@@ -36,6 +37,7 @@ best_subset$BestModel  #Getting the best model with lowest AIC
 ###### compute its test error rate. #######
 #using CV to compute test error for logistic model with predictors
 #from bestsubsets
+set.seed(1234)
 best_subset_model_cv <- train( as.factor(good) ~ fixed.acidity + volatile.acidity +
                              citric.acid + residual.sugar + chlorides +
                              free.sulfur.dioxide + density + pH + sulphates, 
@@ -62,6 +64,7 @@ forward_selection$BestModel
 ###### compute its test error rate. #######
 #using CV to compute test error for logistic model with predictors
 #from foward selection
+set.seed(1234)
 forward_selection_model_cv <- train( as.factor(good) ~ fixed.acidity + volatile.acidity +
                               citric.acid + residual.sugar + chlorides +
                               free.sulfur.dioxide + density + pH + sulphates, 
@@ -87,6 +90,7 @@ backward_selection$BestModel
 ###### compute its test error rate. #######
 #using CV to compute test error for logistic model with predictors
 #from foward selection
+set.seed(1234)
 backward_selection_model_cv <- train( as.factor(good) ~ fixed.acidity + volatile.acidity +
                                       citric.acid + residual.sugar + chlorides +
                                       free.sulfur.dioxide + density + pH + sulphates, 
